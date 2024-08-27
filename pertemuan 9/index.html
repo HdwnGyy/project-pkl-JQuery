@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Modal dengan Jquery</title>
+    <script type ="text/javascript" src="../jquery.js" ></script>
+    <script type ="text/javascript" src="script.js"></script>
+
+    <style type="text/css">
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #tombol {
+            background-color: dodgerblue;
+            color: white;
+            padding: 7px;
+            border: 1px dodgerblue;
+            border-radius: 3px;
+        }
+
+        #modal-box {
+            background-color: #f0f0f0;
+            position: absolute;
+            display: block;
+            width: 500px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1002;
+        }
+
+        #close-button {
+            background-color: crimson;
+            color: white;
+            padding: 5px;
+            border: 1px solid crimson;
+            float: right;
+        }
+
+        #background {
+            background-color: black;
+            opacity: 0.5;
+            position: fixed;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0;
+            z-index: 1001;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="tombol">Informasi</button>
+
+    <div id="background"></div>
+
+    <div id="modal-box">
+        <div id="close">
+            <button id="close-button">X</button>
+        </div>
+        <div id="modal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi fuga necessitatibus, 
+            fugit exercitationem minima earum illum nihil, 
+            iste doloremque sequi tempora officiis debitis iure amet sunt! 
+            Animi consequuntur est pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut at expedita maiores fuga odio tempore magnam ea, 
+            sapiente voluptas ipsa omnis doloremque odit? 
+            Sed nam eaque tempore impedit accusantium laborum?
+        </div>
+    </div>
+
+</body>
+</html>
